@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Bold'), url('../fonts/Gilroy-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Heavy'), url('../fonts/Gilroy-Heavy.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Light'), url('../fonts/Gilroy-Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Regular'), url('../fonts/Gilroy-Regular.woff') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-gilroy-regular text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-body;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-[14px] lg:text-base inline-flex items-center justify-center rounded-md px-6 py-3 font-gilroy-bold transition-all duration-300;
+  }
+
+  .btn-main {
+    @apply bg-blue text-white hover:bg-[#5d52ff];
+  }
+
+
+}
